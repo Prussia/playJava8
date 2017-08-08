@@ -76,7 +76,8 @@ PersonFactory<Person> personFactory = Person::new;
 Person person = personFactory.create("Peter", "Parker");
 ```
 
-
+## Built-in Functional Interfaces
+### Predicates
 
 ## java.util.stream
     A stream represents a sequence of values, and exposes a set of aggregate operations that allow us to express common manipulations on those values easily and clearly. The libraries provide convenient ways to obtain stream views of collections, arrays, and other data sources.
