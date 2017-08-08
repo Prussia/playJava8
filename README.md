@@ -15,7 +15,7 @@ Collections.sort(names, (String a, String b) -> {
 Example:
 
 ```java
-@FunctionalInterface
+@FunctionalInterface // can be ommited
 interface Converter<F, T> {
     T convert(F from);
 }
