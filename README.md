@@ -3,6 +3,12 @@
 http://winterbe.com/posts/2014/03/16/java-8-tutorial/
 
 ## Lambda Expression
+```java
+List<String> names = Arrays.asList("peter", "anna", "mike", "xenia");
+Collections.sort(names, (String a, String b) -> {
+	return b.compareTo(a);
+});
+```
 
 ## Functional Interfaces
 
