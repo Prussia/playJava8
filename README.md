@@ -33,7 +33,7 @@ Converter<String, Integer> converter = Integer::valueOf;
 Integer converted = converter.convert("123");
 System.out.println(converted);   // 123
 ```
-### pass references of methods or constructors via the :: keyword
+### pass references of methods via the :: keyword
 ```java
 class Something {
     String startsWith(String s) {
@@ -48,6 +48,35 @@ Converter<String, String> converter = something::startsWith;
 String converted = converter.convert("Java");
 System.out.println(converted);    // "J"
 ```
+
+### Pass references of constructors via the :: keyword
+
+```java
+class Person {
+    String firstName;
+    String lastName;
+
+    Person() {}
+
+    Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
+```
+
+```java
+interface PersonFactory<P extends Person> {
+    P create(String firstName, String lastName);
+}
+```
+
+```java
+PersonFactory<Person> personFactory = Person::new;
+Person person = personFactory.create("Peter", "Parker");
+```
+
+
 
 ## java.util.stream
     A stream represents a sequence of values, and exposes a set of aggregate operations that allow us to express common manipulations on those values easily and clearly. The libraries provide convenient ways to obtain stream views of collections, arrays, and other data sources.
