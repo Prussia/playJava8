@@ -27,6 +27,7 @@ Integer converted = converter.convert("123");
 System.out.println(converted);    // 123
 ```
 ## Method and Constructor References
+The above example code can be further simplified by utilizing static method references
 ```java
 Converter<String, Integer> converter = Integer::valueOf;
 Integer converted = converter.convert("123");
