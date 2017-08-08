@@ -78,7 +78,18 @@ Person person = personFactory.create("Peter", "Parker");
 
 ## Built-in Functional Interfaces
 ### Predicates
+```java
+Predicate<String> predicate = (s) -> s.length() > 0;
 
+predicate.test("foo");              // true
+predicate.negate().test("foo");     // false
+
+Predicate<Boolean> nonNull = Objects::nonNull;
+Predicate<Boolean> isNull = Objects::isNull;
+
+Predicate<String> isEmpty = String::isEmpty;
+Predicate<String> isNotEmpty = isEmpty.negate();
+```
 ### Functions
 
 ## java.util.stream
