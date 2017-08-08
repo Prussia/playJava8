@@ -1,4 +1,4 @@
-package org.prussia.play.java.eight.lambda;
+package org.prussia.play.java.eight.lambda.play;
 
 import java.util.Arrays;
 import java.util.Collections;
