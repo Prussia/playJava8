@@ -117,7 +117,7 @@ Person p2 = new Person("Alice", "Wonderland");
 comparator.compare(p1, p2);             // > 0
 comparator.reversed().compare(p1, p2);  // < 0
 ```
-
+## [Pipelines](https://docs.oracle.com/javase/tutorial/collections/streams/index.html#pipelines)
 
 ## java.util.stream
     A stream represents a sequence of values, and exposes a set of aggregate operations that allow us to express common manipulations on those values easily and clearly. The libraries provide convenient ways to obtain stream views of collections, arrays, and other data sources.
