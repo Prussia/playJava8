@@ -1,7 +1,7 @@
 # playJava8
 - http://winterbe.com/posts/2014/03/16/java-8-tutorial/
 - http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/
-
+- [Set mutiple java version](http://www.jenv.be/)
 ## Lambda Expression
 ```java
 List<String> names = Arrays.asList("peter", "anna", "mike", "xenia");
